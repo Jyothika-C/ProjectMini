@@ -1,0 +1,37 @@
+<h1>Online Code Judge</h1>
+
+<h2>Problems</h2>
+
+{% for problem in problems %}
+
+    <h3>{{ problem.title }}</h3>
+
+    <p>{{ problem.description }}</p>
+
+    <hr>
+
+{% endfor %}<h1>Online Code Judge</h1>
+
+<h2>Problems</h2>
+
+{% for problem in problems %}
+
+    <div>
+
+        <h3>{{ problem.title }}</h3>
+
+        <p>{{ problem.description }}</p>
+
+        <p>
+            Difficulty:
+            {{ problem.difficulty }}
+        </p>
+
+        <hr>
+
+    </div>
+
+{% endfor %}
+<a href="/submit/{{ problem.id }}/">
+    Solve Problem
+</a>

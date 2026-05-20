@@ -1,0 +1,21 @@
+<h1>{{ problem.title }}</h1>
+
+<p>{{ problem.description }}</p>
+
+<form method="POST">
+
+    {% csrf_token %}
+
+    <textarea
+        name="code"
+        rows="20"
+        cols="80"
+    ></textarea>
+
+    <br><br>
+
+    <button type="submit">
+        Submit Solution
+    </button>
+
+</form>
